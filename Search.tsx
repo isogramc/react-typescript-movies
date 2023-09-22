@@ -19,6 +19,13 @@ const Search = (props) => {
     resetInputField();
   }
 
+  const componentDidMount = () => {
+    const { location, history } = props;
+    //use the state via location.state
+    //and replace the state via
+    history.replace();
+  };
+
   return (
       <form className="search">
         <input
