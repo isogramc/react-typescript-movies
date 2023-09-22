@@ -23,7 +23,7 @@ const Movie = ({movie, getMovieDetails}) => {
   const poster =
     movie.Poster === "N/A" ? DEFAULT_PLACEHOLDER_IMAGE : movie.Poster;
   return (
-    <div className="movie" onClick={callGetMovieDetails}
+    <div className="movie" onClick={callGetMovieDetails}>
       <h2>{movie.Title}</h2>
       <input ref={inputRef} value={movie.Title} onChange={handleSearchInputChanges} type="text" hidden/>
         <img 
